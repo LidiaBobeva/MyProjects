@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DIVs in circle</title>
+    <style>
+        .div-to-move {
+            border: 1px solid #795039;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: #b6ff00;
+            color: #795039;
+        }
+    </style>
+</head>
+<body onload="moveDivStart()">
+
+    <div id="container">
+        <div class="div-to-move">DIV</div>
+        <div class="div-to-move">DIV</div>
+        <div class="div-to-move">DIV</div>
+        <div class="div-to-move">DIV</div>
+        <div class="div-to-move">DIV</div>
+    </div>
+
+    <script>
+        function moveDivStart() {
+
+            function moveDiv(t, myDiv) {
+                myDiv.style.position = "absolute";
+                t = t + 0.1; // "time"
+                var r = 50; //radius of circle
+                var xcenter = 100; //x location of circles centre on screen
+                var ycenter = 100; //y location of circles centre on screen
+                var x = Math.floor(xcenter + (r * Math.cos(t))); //circles parametric function
+                var y = Math.floor(ycenter + (r * Math.sin(t))); //circles parametric function
+
+                myDiv.style.top = x + "px"; //set divs new coordinates
+                myDiv.style.left = y + "px"; //set divs new coordinates
+
+                setTimeout();
+                setTimeout(function () { //make sure the animation keeps going
+                    moveDiv(t, myDiv);
+                }, 100);
+            }
+
+            //function divsCoordintes() {
+
+            //    var container = document.getElementById("container");
+            //    var divs = container.childNodes;
+            //    var onlyDivs = [];
+            //    for (var i = 0; i < divs.length; i++) {
+            //        if (divs[i] instanceof HTMLDivElement) {
+            //            onlyDivs.push(divs[i]);
+            //        }
+            //    }
+            //    var numElements = 5;
+            //    var angle = 36;
+            //    var radius = 50;
+            //    var step = (2 * Math.PI) / numElements;
+
+            //    for (var i = 0; i < numElements; i++) {
+            //        var x = 200 / 2 + radius * Math.cos(angle);
+            //        var y = 200 / 2 + radius * Math.sin(angle);
+            //        angle += step;
+            //        onlyDivs[i].style.position = "absolute";
+            //        onlyDivs[i].style.top = x + "px";
+            //        onlyDivs[i].style.left = y + "px";
+
+            //    }
+            //}
+
+            //divsCoordintes();
+
+            var myDivs = document.getElementsByClassName("div-to-move");//get div elements
+
+            moveDiv(1, myDivs[0]); //start the animation
+            moveDiv(2.2, myDivs[1]); //start the animation
+            moveDiv(3.4, myDivs[2]); //start the animation
+            moveDiv(4.6, myDivs[3]); //start the animation
+            moveDiv(5.8, myDivs[4]); //start the animation
+        }
+    </script>
+</body>
+</html>

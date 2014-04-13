@@ -1,0 +1,20 @@
+﻿ul {
+    list-style-type: none;
+}
+
+    ul li {
+        padding: 2px;
+    }
+
+li > ul {
+    display: none;
+    color: #b9b9b9;
+}
+
+li:hover > ul {
+    display: block;
+}
+
+    li:hover > ul li {
+        text-decoration: none;
+    }

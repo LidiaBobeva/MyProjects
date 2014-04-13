@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TheCalculator</title>
+    <link href="TheCalculator.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="window">
+        <img src="Calculator.png" alt="CalculatorIcon" />
+        <div id="Calc">Calculator</div>
+        <div id="CloseBar">
+            <img src="MinimizeButton.png" alt="Minimize" />
+            <img src="ResoreButton.png" alt="Minimize" />
+            <img src="CloseButton.png" alt="Close" />
+        </div>
+        <div id="CalculatorBody">
+            <header>
+                <span>View</span>  <span>Edit</span>  <span>Help</span>
+            </header>
+            <section>
+                <div id="field">8854455</div>
+                <div id="field-of-numbers">
+                    <table>
+                        <tr>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                        </tr>
+                        <tr>
+                            <td class="grey">63</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="grey">47</td>
+                            <td></td>
+                            <td></td>
+                            <td class="grey">32</td>
+                        </tr>
+                        <tr>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                            <td>0000</td>
+                        </tr>
+                        <tr>
+                            <td class="grey">31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="grey">15</td>
+                            <td></td>
+                            <td></td>
+                            <td class="grey">0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td id="system" colspan="2" rowspan="3">
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="system" />Hex</li>
+                                    <li>
+                                        <input type="radio" name="system" />Dec</li>
+                                    <li>
+                                        <input type="radio" name="system" />Oct</li>
+                                    <li>
+                                        <input type="radio" name="system" />Bin</li>
+                                </ul>
+                            </td>
+                            <td></td>
+                            <td class="button-gradient">Mod</td>
+                            <td class="unactive">A</td>
+                            <td>MC</td>
+                            <td>MR</td>
+                            <td>MS</td>
+                            <td>M+</td>
+                            <td>M-</td>
+                        </tr>
+                        <tr>
+                            <td class="button-gradient">(</td>
+                            <td class="button-gradient">)</td>
+                            <td class="unactive">B</td>
+                            <td class="button-gradient">&larr;</td>
+                            <td class="button-gradient">CE</td>
+                            <td class="button-gradient">C</td>
+                            <td class="button-gradient">&plusmn;</td>
+                            <td class="unactive">&radic;</td>
+                        </tr>
+                        <tr>
+                            <td class="button-gradient">RoL</td>
+                            <td class="button-gradient">RoR</td>
+                            <td class="unactive">C</td>
+                            <td class="button-number">7</td>
+                            <td class="button-number">8</td>
+                            <td class="button-number">9</td>
+                            <td class="button-gradient">/</td>
+                            <td class="unactive">%</td>
+                        </tr>
+                        <tr>
+                            <td id="system2" colspan="2" rowspan="3">
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="type-def" />Qword</li>
+
+                                    <li>
+                                        <input type="radio" name="type-def" />Dword</li>
+
+                                    <li>
+                                        <input type="radio" name="type-def" />Word</li>
+                                    <li>
+                                        <input type="radio" name="type-def" />Byte</li>
+                                </ul>
+                            </td>
+                            <td class="button-gradient">Or</td>
+                            <td class="button-gradient">Xor</td>
+                            <td class="unactive">D</td>
+                            <td class="button-number">4</td>
+                            <td class="button-number">5</td>
+                            <td class="button-number">6</td>
+                            <td class="button-gradient">*</td>
+                            <td class="unactive">1/x</td>
+                        </tr>
+                        <tr>
+                            <td class="button-gradient">Lsh</td>
+                            <td class="button-gradient">Rsh</td>
+                            <td class="unactive">E</td>
+                            <td class="button-number">1</td>
+                            <td class="button-number">2</td>
+                            <td class="button-number">3</td>
+                            <td class="button-gradient">-</td>
+                            <td class="unactive" id="result" rowspan="2">=</td>
+                        </tr>
+                        <tr>
+                            <td class="button-gradient">Not</td>
+                            <td class="button-gradient">And</td>
+                            <td class="unactive">F</td>
+                            <td class="button-number" colspan="2">0</td>
+                            <td class="unactive">,</td>
+                            <td class="button-gradient">+</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

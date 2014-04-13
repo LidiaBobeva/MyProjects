@@ -1,0 +1,241 @@
+﻿body, div, a, ul, li, p, strong, aside, header, footer, section {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 820px;
+    height: 790px;
+    background: url(imgs/base-gradient.png) 0 0 repeat-x;
+}
+
+#border-helper {
+    position: relative;
+    border: 9px solid #9A8A65;
+    border-radius: 10px;
+    margin: 30px 42px 20px;
+    height: 740px;
+    width: 715px;
+    background: white;
+}
+
+a {
+    display: inline-block;
+    color: #5F4D21;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+/*HEADER*/
+header {
+    height: 305px;
+    background: url(imgs/title.png) 30px 42px no-repeat;
+    position: relative;
+    top: -820px;
+    left: 12px;
+}
+/*ASIDE*/
+aside {
+    position: absolute;
+    top: 174px;
+    left: 51px;
+    width: 220px;
+}
+
+    aside ul {
+        background: #2A2A2A;
+        list-style-type: none;
+    }
+
+        aside ul li {
+            border-bottom: 1px solid #787878;
+            padding: 5px 40px 0px;
+            line-height: 19px;
+            background: url(imgs/arrow.png) 180px 10px no-repeat;
+        }
+
+            aside ul li:first-of-type {
+            }
+
+            aside ul li a {
+                text-decoration: none;
+                color: #DFDFDF;
+            }
+
+.selected {
+    color: #E9C379;
+    background: url(imgs/arrow-selected.png) 180px 10px no-repeat;
+}
+
+div#news {
+    border-top: 17px solid #CDC4AA;
+    background: url(imgs/aside-gradient.png) 0 0 repeat-y;
+    border-bottom-right-radius: 10px;
+    padding-left: 25px;
+    padding-top: 40px;
+    padding-right: 35px;
+    color: #6A5A2F;
+    font-family: Tahoma;
+    font-size: 10px;
+}
+
+
+    div#news strong {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    div#news p {
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+        div#news p:first-of-type {
+            border-bottom: 2px dotted #CDC4AA;
+            margin-bottom: 10px;
+        }
+
+    div#news a {
+        position: relative;
+        left: 130px;
+    }
+
+    div#news #phone {
+        position: relative;
+        left: -25px;
+        bottom: 0px;
+        width: 221px;
+        height: 90px;
+        background: url(imgs/phone.png) 0px 0 no-repeat;
+    }
+
+
+/*SECTION*/
+
+section {
+    position: absolute;
+    top: 293px;
+    left: 271px;
+    width: 465px;
+    background-color: white;
+    color: #6A5A2F;
+    font-family: Tahoma;
+    font-size: 11px;
+    padding: 25px 0 20px 30px;
+}
+
+    section h1 {
+        font-size: 16px;
+        color: #BF8C10;
+        border-bottom: 1px solid #CFBD93;
+        padding-bottom: 5px;
+    }
+
+
+    section div#article {
+        display: inline-block;
+        border: 1px solid #DBD1B8;
+        border-radius: 11px;
+        height: 129px;
+    }
+
+        section div#article img {
+            padding: 6px;
+            border: 5px solid #E7E0CE;
+            border-radius: 10px;
+        }
+
+    section > article > p {
+        display: inline;
+        position: absolute;
+        top: 80px;
+        padding-right: 20px;
+        padding-left: 15px;
+        text-align: justify;
+    }
+
+        section > article > p > span {
+            display: block;
+            height: 10px;
+        }
+
+    section > article > a {
+        position: absolute;
+        right: 20px;
+        top: 200px;
+    }
+
+
+
+#company-profile h2 {
+    font-size: 14px;
+    color: #D1B772;
+    border-bottom: 1px solid #CFBD93;
+    padding-bottom: 5px;
+}
+
+div.img-container {
+    display: inline-block;
+    border: 1px solid #DBD1B8;
+    border-radius: 15px;
+    height: 117px;
+}
+
+div.img-container-2 {
+    padding: 6px;
+    background: #E7E0CE;
+    border-radius: 14px;
+}
+
+    div.img-container-2 img {
+        background: white;
+        padding: 6px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: 1px solid #C4BCA7;
+    }
+
+
+div.img-title {
+    background: white;
+    padding: 6px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    color: #8E783C;
+    font-size: 9px;
+}
+
+#company-profile p {
+    display: inline-block;
+    width: 100px;
+    text-align: justify;
+}
+
+#company-profile a {
+    position: absolute;
+    right: 25px;
+}
+
+div#right {
+    float: right;
+    margin-right: 25px;
+}
+
+div#left {
+    float: left;
+}
+
+/*FOOTER*/
+
+footer {
+    position: absolute;
+    top: 723px;
+    left: 51px;
+    color: #5E4B21;
+    font-family: Tahoma;
+    font-size: 10px;
+    background: #DFD4B5;
+    padding: 22px 230px;
+    width: 255px;
+}

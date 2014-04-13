@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Trash bin game</title>
+    <script src="JSForTrashBinGame.js"></script>
+    <link href="stylesForTrashBin.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <img id="bin-closed" class="bin" src="imgs/1194985707357270269gnome-fs-trash-empty.svg.hi.png" alt="Closed bin" ondrop="dropPaper(event)" ondragover="openBucket()" />
+        <img id="bin-opened" class="bin" src="imgs/11949857082115351899gnome-fs-trash-full.svg.hi.png" alt="Opened bin" ondrop="dropPaper(event)" ondragleave="closeBucket()" ondragover="alowDrop(event)" />
+        <label for="userNameInput">Please enter your name</label>
+        <input type="text" name="userName" value=" " id="userNameInput" />
+        <button id="submit-name" onclick="submitName()">OK</button>
+        <div id="scoreBoard"><span>Best results:</span></div>
+        <button id="lockal-strage-clear" onclick="ClearLockalStorage()">Clear high-score board</button>
+        <button id="play-again" onclick="ReloadPage()">Play again</button>
+    </div>
+</body>
+</html>

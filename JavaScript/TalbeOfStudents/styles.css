@@ -1,0 +1,21 @@
+﻿table {
+    color: #525252;
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    border: 3px solid #0094ff;
+    background: #c0e5ff;
+    padding: 0;
+    margin: 50px;;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+    table thead {
+        border-bottom: 3px solid #0094ff;
+        background: #9cd4fc;
+    }
+
+    table td {
+        border: 1px solid #0094ff;
+        padding: 5px;
+        margin: 0;
+    }

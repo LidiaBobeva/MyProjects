@@ -1,0 +1,63 @@
+﻿a, span, div, button, html, body {
+    padding:0;
+    margin:0;
+}
+
+
+span.left {
+    background: url(imgs/left.png);
+    display: inline-block;
+    width: 22px;
+    height: 55px;
+    float: left;
+    line-height: 55px;
+   
+}
+
+a:hover span{
+text-decoration:underline;
+}
+span.middle {
+    background: url(imgs/middle.png);
+    background-repeat: repeat-x;
+    display: inline-block;
+    height: 55px;
+        left: 23px;
+    line-height: 45px;
+ }
+
+span.right {
+    background: url(imgs/right.png);
+    display: inline-block;
+    width: 32px;
+    height: 55px;
+    float: right;
+    line-height: 55px;
+    
+}
+
+span {
+    background-position: 0 0;
+    }
+button,div {
+    background: none;
+    border: none;
+    margin:20px;
+    padding-bottom:-60px;
+    
+}
+
+div {
+    display:inline-block;
+}
+
+/*div, span {
+    zoom:1;
+}
+
+div:after, span:after {
+    content:"";
+    display:block;
+    clear:both;
+    height:0;
+}*/

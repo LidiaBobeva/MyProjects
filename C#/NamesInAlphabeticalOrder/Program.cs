@@ -11,6 +11,8 @@ namespace _6NamesListInAlphabetOrder
     {
         static void Main(string[] args)
         {
+            //Напишете програма, която чете списък от имена от текстов файл, подрежда ги по азбучен ред и ги запазва в друг файл. 
+            //Имената са записани по едно на ред. 
             StreamReader reader = new StreamReader("UnorderedListWithNames.txt");
             using (reader)
             {

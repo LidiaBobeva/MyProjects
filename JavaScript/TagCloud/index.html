@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tag Cloud</title>
+    <style>
+        #container {
+            width: 250px;
+            height: 210px;
+            border: 1px solid black;
+            border-radius: 7px;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        span {
+            margin: 5px;
+            position: relative;
+            display:inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        var tags = ["cms", "javascript", "js", "ASP.NET MVC", ".net", ".net", "css", "wordpress", "xaml", "js", "http", "web", "asp.net", "asp.net MVC", "ASP.NET MVC", "wp", "javascript", "js", "cms", "html", "javascript", "http", "http", "CMS", "js"]
+        generateTagCloud(tags, 17, 42); //string
+
+        function generateTagCloud(tags, minTextSize, maxTextSize) {
+            var dictionaryOfOccurances = {};
+            for (var i = 0; i < tags.length; i++) {
+                tags[i] = tags[i].toLowerCase();
+
+                if (!dictionaryOfOccurances[tags[i]]) {
+                    dictionaryOfOccurances[tags[i]] = 1;
+                }
+                else {
+                    dictionaryOfOccurances[tags[i]]++;
+                }
+            }
+            console.log(dictionaryOfOccurances);
+
+            var minValue = Number.MAX_VALUE;
+            var maxValue = Number.MIN_VALUE;
+
+            for (var i in dictionaryOfOccurances) {
+                if (dictionaryOfOccurances[i] < minValue) {
+                    minValue = dictionaryOfOccurances[i];
+                }
+
+                if (dictionaryOfOccurances[i] > maxValue) {
+                    maxValue = dictionaryOfOccurances[i];
+                }
+            }
+
+            var coefitient = interpolateFontSize(minTextSize, maxTextSize, dictionaryOfOccurances, minValue, maxValue);
+            fillDivWithSpans(minTextSize, maxTextSize, minValue, maxValue, dictionaryOfOccurances, coefitient);
+        }
+
+        function interpolateFontSize(minTextSize, maxTextSize, dictionaryOfOccurances, minValue, maxValue) {
+
+            var diapazon = maxValue - minValue;
+            var coefitient = (maxTextSize - minTextSize) / diapazon
+            return coefitient;
+        }
+
+        function fillDivWithSpans(minTextSize, maxTextSize, minValue, maxValue, dictionaryOfOccurances, coefitient) {
+            var container = document.getElementById("container");
+            for (var i in dictionaryOfOccurances) {
+                var span = document.createElement("span");
+                span.innerHTML = i;
+                if (dictionaryOfOccurances[i] == maxValue) {
+                    span.style.fontSize = maxTextSize + "px";
+                }
+
+                else if (dictionaryOfOccurances[i] == minValue) {
+                    span.style.fontSize = minTextSize + "px";
+                }
+
+                else {
+                    span.style.fontSize = ((dictionaryOfOccurances[i] - minValue) * coefitient + minTextSize) + "px";
+                }
+
+                container.appendChild(span);
+            }
+                console.log(container.innerText);
+        }
+    </script>
+</body>
+</html>
+
+<!--Visualize a string of tags (strings) in a given container
+By given minFontSize and maxFontSize, generate the tags with different font-size, 
+    depending on the number of occurrences-->

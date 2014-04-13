@@ -1,0 +1,76 @@
+﻿body, img {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 850px;
+    height: 500px;
+    background-color: #ffffd8;
+    border: dotted 3px #ffe515;
+}
+
+img.bin {
+    position: absolute;
+    margin: 80px;
+    width: 250px;
+}
+
+
+#bin-opened {
+    top: -40px;
+    display: none;
+}
+
+
+
+.paper {
+    width: 50px;
+    position: absolute;
+}
+
+#userNameInput {
+    position: absolute;
+    display: none;
+    left: 320px;
+    top: 160px;
+}
+
+label {
+    position: absolute;
+    display: none;
+    left: 320px;
+    top: 135px;
+}
+
+#submit-name {
+    position: absolute;
+    display: none;
+    left: 480px;
+    top: 160px;
+}
+
+#scoreBoard {
+    padding: 10px;
+    border: dotted 3px #ffe515;
+    position: absolute;
+    left: 870px;
+    top: 160px;
+}
+
+    #scoreBoard span {
+        font-weight: bold;
+    }
+
+#lockal-strage-clear {
+    position: absolute;
+    left: 990px;
+    top: 165px;
+}
+
+#play-again {
+    position: absolute;
+    display: none;
+    left: 470px;
+    top: 160px;
+}

@@ -1,0 +1,61 @@
+﻿body {
+    border: 1px solid black;
+    width: 1030px;
+    height: 780px;
+    padding: 15px;
+    font-family: Arial;
+}
+
+header {
+    margin: 0px 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+    header a {
+        color: #37C0F3;
+    }
+
+section {
+    border: 1px solid black;
+    position: relative;
+    width: 690px;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+    section fieldset {
+        position: relative;
+        height: 200px;
+        width: 300px;
+        display: inline-block;
+        border-color: black;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 20px;
+        line-height: 40px;
+    }
+
+aside {
+    display: inline-block;
+    position: relative;
+    left: 750px;
+    top: -500px;
+    text-align: center;
+}
+
+    aside span {
+        font-size: 26px;
+    }
+
+input {
+    width: 260px;
+}
+
+img {
+    float: left;
+    width: 140px;
+}

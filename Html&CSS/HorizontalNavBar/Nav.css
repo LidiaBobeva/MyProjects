@@ -1,0 +1,47 @@
+﻿html, body, ul, li, nav {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    font-family: Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    list-style-type: none;
+    margin: 20px;
+}
+
+span {
+    border-left: 1px solid #FFFFFF;
+    padding: 4px 25px;
+    display: inline-block;
+}
+
+li:first-of-type span {
+    border-left: none;
+}
+
+a {
+    text-decoration: none;
+    color: #A7162E;
+}
+
+li {
+    background: url(imgs/gradient.png);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    display: inline-block;
+    border: 1px solid #CFCFCF;
+    border-left: 0;
+    height: 38px;
+    line-height: 30px;
+}
+
+    li:first-of-type {
+        border-left: 1px solid #CFCFCF;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    li:last-of-type {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
